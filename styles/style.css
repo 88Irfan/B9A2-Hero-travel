@@ -1,0 +1,82 @@
+/* shared styles */
+
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    font-family: 'Mulish', sans-serif;
+}
+body {
+    max-width: 1440px;
+    height: 6940px;
+    
+}
+header{
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 200px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column-one {
+    display: flex;
+    align-items: center;
+}
+
+.column-one img {
+    width: 48px;
+    height: 60px;
+}
+
+.column-one p {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.column-one span {
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.column-two {
+    /* display: flex; */
+
+}
+
+.column-two>ul {
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+
+}
+
+ul li {
+    list-style: none;
+    
+}
+
+ul li a {
+    text-decoration: none;
+    color: #424247;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+ul li a span {
+    color: #FF5400;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
