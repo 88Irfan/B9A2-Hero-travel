@@ -1,16 +1,24 @@
 /* shared styles */
 
-    @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
-*{
+* {
     font-family: 'Mulish', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
+
+.shared-color {
+    background-color: #FF5400;
+}
+
 body {
     max-width: 1440px;
     height: 6940px;
-    
+
 }
-header{
+
+header {
     padding-top: 30px;
     padding-right: 50px;
     padding-left: 200px;
@@ -18,7 +26,7 @@ header{
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -47,10 +55,6 @@ header{
     line-height: normal;
 }
 
-.column-two {
-    /* display: flex; */
-
-}
 
 .column-two>ul {
     display: flex;
@@ -63,7 +67,7 @@ header{
 
 ul li {
     list-style: none;
-    
+
 }
 
 ul li a {
@@ -79,4 +83,604 @@ ul li a span {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+.column-two a.icon {
+    /* background: black; */
+    display: block;
+    position: relative;
+    left: 650px;
+    /* right: 150px; */
+    bottom: 50px;
+}
+
+/* Banner styles */
+.banner {
+    position: relative;
+}
+
+.banner-title {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 64px;
+    font-weight: 800;
+
+}
+
+/* .bannar-details{
+    position: relative;
+} */
+.banner-description {
+    position: relative;
+    bottom: 330px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+
+}
+
+.form-details {
+    position: relative;
+    bottom: 260px;
+    left: 240px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.form-element .input {
+    width: 174px;
+    height: 45px;
+    border: 0;
+    border-radius: 8px;
+    background: #FFF;
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+
+
+}
+
+.search {
+    width: 174px;
+    height: 45px;
+    border: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+/* our-tours style */
+.tour-section {
+    display: flex;
+    /* padding-left: 135px;
+    padding-right: 135px; */
+    margin-left: 120px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.our-tours {
+    /* display: flex; */
+}
+
+.tour-title {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.tour-description {
+    width: 577px;
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-left: 16px;
+    padding-right: 26px;
+    /* 162.5% */
+}
+
+.list-item {
+    width: 530px;
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-left: 16px;
+    padding-right: 26px;
+    /* 162.5% */
+}
+
+.tours-image {
+    display: flex;
+
+
+}
+
+.tours-image img {
+    width: 540px;
+    height: 550px;
+    border-radius: 16px;
+    background: lightgray 50%;
+}
+
+/* Destination styles */
+.destination h2 {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.destination p {
+    width: 643px;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    padding-left: 350px;
+    padding-right: 120px;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+/* Destination images */
+.image-col-one {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 135px;
+    margin-right: 135px;
+    gap: 50px
+}
+
+.image-col-one .maldive-image {
+    width: 573px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.image-col-one .indonesia-image {
+    width: 573px;
+    height: 300px;
+    flex-shrink: 0;
+    fill: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray -101px -108.075px / 135.253% 172.05% no-repeat;
+}
+
+.image-col-one .maldive {
+    position: relative;
+    left: 350px;
+    top: 180px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.image-col-one .name .indonesia {
+    position: relative;
+    right: 350px;
+    top: 180px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.destination-image-row-two {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.destination-image-row-two .srilanka-image {
+    width: 374px;
+    height: 286px;
+    flex-shrink: 0;
+}
+
+.destination-image-row-two .north-image {
+    width: 474px;
+    height: 286px;
+    flex-shrink: 0;
+    /* position: relative; */
+}
+
+.destination-image-row-two .kashmir-image {
+    width: 274px;
+    height: 286px;
+    flex-shrink: 0;
+}
+
+.destination-image-row-two .srilanka {
+    position: relative;
+    left: 238px;
+    top: 115px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.destination-image-row-two .north-america {
+    position: relative;
+}
+
+.destination-image-row-two .north {
+    position: absolute;
+    left: 100px;
+    top: 80px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.destination-image-row-two .kashmir-positions {
+    position: relative;
+
+}
+
+.destination-image-row-two .kashmir {
+    position: absolute;
+    left: 80px;
+    top: 80px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.destination-image-row-three {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    /* gap: 20px; */
+}
+
+.bangladesh {
+    position: relative;
+    width: 473px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.bangladesh .b-para {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.ban-para {
+    position: relative;
+    bottom: 190px;
+    /* left: 200px; */
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/* .bandarban .ban-para{
+    position: relative;
+    top: 100px;
+    left: 200px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+} */
+/* Choose US Styles */
+.choose-us {
+    text-align: center;
+}
+
+.choose-us h2 {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.choose-us p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 643px;
+    padding-left: 398px;
+    padding-right: 150px;
+    /* 162.5% */
+}
+
+/* choose us details */
+.choose-us-deatils {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-one {
+    /* display: flex; */
+    width: 573px;
+    height: 284px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 10px;
+}
+
+.row-one .logo1 {
+    padding-top: 10px;
+    padding-left: 32px;
+    width: 64px;
+    height: 64px;
+}
+
+.row-one .title {
+    /* display: inline-block; */
+    color: #131318;
+    /* text-align: center; */
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.row-one .row-para {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.row-two {
+    width: 573px;
+    height: 284px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 20px;
+}
+
+.row-two .map {
+    width: 64px;
+    height: 64px;
+}
+
+.row-two h4 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.row-two p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.just-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.row-three {
+    /* display: flex; */
+    width: 573px;
+    height: 284px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 10px;
+    /* text-align: center; */
+
+}
+
+.row-three .price-logo {
+    width: 64px;
+    height: 64px;
+}
+
+/* deals and discount */
+.deals {
+    background: #FFF;
+}
+
+.deals h2 {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.deals p {
+    width: 643px;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-left: 264px;
+    padding-right: 263px;
+    /* 162.5% */
+}
+
+/* Background image */
+.deals-background-img img {
+    /* width: 1170px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+}
+
+/* Footer styles */
+.footer {
+    background: rgba(19, 19, 24, 0.05);
+    height: 502px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 46.673px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.footer-logo p {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.footer-logo p span {
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.footer-details {
+    width: 769px;
+    color: #5A5A5D;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-left: 335px;
+    /* 162.5% */
+}
+
+.footer-social-icons {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.facebook {
+    padding: 20px;
+}
+
+.all-right {
+    text-align: center;
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* Responsive styles for mobile device */
+@media screen and (max-width:576px) {
+
+    .tour-section,
+    .tours-image,
+    .image-col-one {
+        flex-direction: column;
+    }
+
+
 }
